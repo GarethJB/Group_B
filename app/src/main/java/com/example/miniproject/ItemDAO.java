@@ -19,10 +19,12 @@ public class ItemDAO {
     }
 
     public ItemDTO orderItem(int id) {
-        if (map.get(id) == null || map.get(id).getQty() == 0) {
+        ItemDTO dto = map.get(id);
+        if (dto == null || dto.getQty() == 0) {
             return null;
         }
-        map.get(id).setQty();
+        dto.setQty(dto.getQty() - 1);
+        return dto;
     }
 
 }
