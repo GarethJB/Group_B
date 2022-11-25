@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,8 +17,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText txt_input;
     TextView txt_money;
 
+
     //클래스 내부 전역변수로 지정해야 다른 메소드에서도 사용 가능
     int money;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,22 +32,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txt_input = findViewById(R.id.txt_input);
         txt_money = findViewById(R.id.txt_money);
 
-
         btn_input.setOnClickListener(this);
-
 
     }
 
-    /*-----1.금액입력부------- */
+    /*----- 1.금액입력부 : 숫자값만 입력 ------- */
     @Override
     public void onClick(View v) {
 
-        money = Integer.parseInt(txt_input.getText().toString());
+        try {
+            money = Integer.parseInt(txt_input.getText().toString());
+            txt_money.setText("잔액 : " + money + "원");
+
+        } catch(Exception e){
+            Toast.makeText(this, "숫자만 입력하실 수 있습니다", Toast.LENGTH_SHORT).show();
+        }
+
+
 
 
         //버튼이 클릭된다
 
-        Log.d("버튼", "onClick:클릭 ");
+       // Log.d("버튼", "onClick:클릭 ");
 
         // 버튼이 클릭되면 입력받은 값을 담는다: getText()
 
@@ -60,9 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    //정수값만 받아야 한다 --> 문자는 안된다
-    //정수값만 받는 메소드 생성
-
+ 
 
 
 
