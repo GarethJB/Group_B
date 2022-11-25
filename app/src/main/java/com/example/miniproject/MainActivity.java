@@ -24,8 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     HashMap<Integer, Integer> orderMap;
 
 
+
+
     //클래스 내부 전역변수로 지정해야 다른 메소드에서도 사용 가능
     int money = 0;
+    int getMoney = 0;
 
 
     @Override
@@ -85,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else if (v.getId() == R.id.item4_btn) {
                     id = 4;
                 }
-                if (money < map.get(id).getPrice()) {
+                if (getMoney < map.get(id).getPrice()) {
                     Toast.makeText(MainActivity.this, "잔액이 부족합니다.", Toast.LENGTH_SHORT).show();
                 } else if (map.get(id).getQty() == 0) {
                     Toast.makeText(MainActivity.this, "해당 상품의 잔고가 부족합니다.", Toast.LENGTH_SHORT).show();
@@ -96,8 +99,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     } else {
                         orderMap.put(id, orderMap.get(id) + 1);
                     }
-                    money -= map.get(id).getPrice();
-                    txt_money.setText("잔액 : " + money);
+                    getMoney -= map.get(id).getPrice();
+                    txt_money.setText("잔액 : " + getMoney + "원");
                     refreshQty(id);
                 }
             }
@@ -146,15 +149,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
+
         try {
             money = Integer.parseInt(txt_input.getText().toString());
-            txt_money.setText("잔액 : " + money + "원");
+            getMoney += money;
+            txt_money.setText("잔액 : " + getMoney + "원");
 
-        } catch(Exception e){
+        } catch (Exception e) {
             Toast.makeText(this, "숫자만 입력하실 수 있습니다", Toast.LENGTH_SHORT).show();
         }
-
-
 
 
         //버튼이 클릭된다
