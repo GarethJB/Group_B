@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-#Fri Nov 25 12:39:38 KST 2022
+#Fri Nov 25 12:51:25 KST 2022
 base.2=D\:\\study_Android\\mini_project\\Group_B\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-=======
-#Fri Nov 25 12:38:08 KST 2022
-base.2=D\:\\Study_Android\\WorkSpace\\test_002\\app\\src\\Group_B\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
->>>>>>> origin/Mini_jm
 path.2=15/classes.dex
-base.1=D\:\\Study_Android\\WorkSpace\\test_002\\app\\src\\Group_B\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=D\:\\study_Android\\mini_project\\Group_B\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 path.1=0/classes.dex
-base.0=D\:\\Study_Android\\WorkSpace\\test_002\\app\\src\\Group_B\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.0=D\:\\study_Android\\mini_project\\Group_B\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
