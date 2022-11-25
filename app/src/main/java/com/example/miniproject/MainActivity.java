@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText txt_input;
     TextView txt_money, item1_price, item1_text, item2_price, item2_text, item3_price,
@@ -23,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
     HashMap<Integer, ItemDTO> map;
     HashMap<Integer, Integer> orderMap;
 
+
     //클래스 내부 전역변수로 지정해야 다른 메소드에서도 사용 가능
     int money = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         item4_btn.setOnClickListener(orderClick);
         btn_input.setOnClickListener(inputClick);
         btn_change.setOnClickListener(changeClick);
-
+        btn_input.setOnClickListener(this);
 
     }
 
@@ -140,6 +142,40 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    /*----- 1.금액입력부 : 숫자값만 입력 ------- */
+    @Override
+    public void onClick(View v) {
+
+        try {
+            money = Integer.parseInt(txt_input.getText().toString());
+            txt_money.setText("잔액 : " + money + "원");
+
+        } catch(Exception e){
+            Toast.makeText(this, "숫자만 입력하실 수 있습니다", Toast.LENGTH_SHORT).show();
+        }
+
+
+
+
+        //버튼이 클릭된다
+
+       // Log.d("버튼", "onClick:클릭 ");
+
+        // 버튼이 클릭되면 입력받은 값을 담는다: getText()
+
+        //Log.d("버튼", "onClick:클릭 " + txt_input.getText() );
+
+        // 입력받은 값을 잔액표시란에 보여준다 : setText()
+
+        //txt_money.setText("금액이 입력되었습니다");
+
+        //버튼 클릭되면 입력받은 값을 잔액표시란에 출력한다
+        //txt_money.setText("잔액 : " + txt_input.getText());
+
+
+    }
+
+ 
 
 
 
