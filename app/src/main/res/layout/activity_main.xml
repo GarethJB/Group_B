@@ -106,12 +106,6 @@
     <!--자판기화면 기본 layout-->
 
 
-
-
-
-
-
-
     </LinearLayout>
     <LinearLayout
              android:layout_width="match_parent"
