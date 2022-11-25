@@ -95,6 +95,7 @@
                 android:layout_height="wrap_content"/>
 
             <Button
+                android:id="@+id/item2_btn"
                 android:layout_gravity="center"
                 android:text="주문하기"
                 android:layout_width="120dp"
@@ -138,6 +139,7 @@
                      android:layout_height="wrap_content"/>
 
                  <Button
+                     android:id="@+id/item3_btn"
                      android:layout_gravity="center"
                      android:text="주문하기"
                      android:layout_width="120dp"
@@ -171,6 +173,7 @@
                      android:layout_height="wrap_content"/>
 
                  <Button
+                     android:id="@+id/item4_btn"
                      android:layout_gravity="center"
                      android:text="주문하기"
                      android:layout_width="120dp"
