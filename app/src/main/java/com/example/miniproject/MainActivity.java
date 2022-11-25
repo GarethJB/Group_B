@@ -62,15 +62,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         item4_price.setText(map.get(4).getName() + " " + map.get(4).getPrice() + "원");
         item4_text.setText(map.get(4).getQty() + "개 남음");
 
-        txt_money.setText("잔액 : " + money);
+        txt_money.setText("잔액 : " + money + "원");
 
-        View.OnClickListener inputClick = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                money = Integer.parseInt(txt_input.getText().toString());
-                txt_money.setText("잔액 : " + money);
-            }
-        };
+//        View.OnClickListener inputClick = new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                money = Integer.parseInt(txt_input.getText().toString());
+//                txt_money.setText("잔액 : " + money);
+//            }
+//        };
 
         View.OnClickListener orderClick = new View.OnClickListener() {
             @Override
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         item2_btn.setOnClickListener(orderClick);
         item3_btn.setOnClickListener(orderClick);
         item4_btn.setOnClickListener(orderClick);
-        btn_input.setOnClickListener(inputClick);
+        //btn_input.setOnClickListener(inputClick);
         btn_change.setOnClickListener(changeClick);
         btn_input.setOnClickListener(this);
 

@@ -2876,6 +2876,15 @@ id italic
 id item1_btn
 id item1_price
 id item1_text
+id item2_btn
+id item2_price
+id item2_text
+id item3_btn
+id item3_price
+id item3_text
+id item4_btn
+id item4_price
+id item4_text
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3106,6 +3115,8 @@ id transition_transform
 id triangle
 id txt_input
 id txt_money
+id txt_money_result
+id txt_order_result
 id unchecked
 id uniform
 id unlabeled
@@ -3252,6 +3263,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_result
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

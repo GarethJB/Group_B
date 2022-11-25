@@ -92,6 +92,10 @@
         "source": "com.example.miniproject.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.miniproject.app-merged_res-29:/layout_activity_result.xml.flat",
+        "source": "com.example.miniproject.app-main-31:/layout/activity_result.xml"
+    },
+    {
         "merged": "com.example.miniproject.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
         "source": "com.example.miniproject.app-main-31:/xml/data_extraction_rules.xml"
     }
