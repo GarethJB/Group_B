@@ -18,13 +18,9 @@ public class ItemDAO {
         return map;
     }
 
-    public ItemDTO orderItem(int id) {
+    public void orderItem(int id) {
         ItemDTO dto = map.get(id);
-        if (dto == null || dto.getQty() == 0) {
-            return null;
-        }
         dto.setQty(dto.getQty() - 1);
-        return dto;
     }
 
 }
