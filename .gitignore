@@ -26,7 +26,7 @@ local.properties
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/outputFiles.bin
 .gradle/file-system.probe
-
+.idea/workspace.xml
 app/build/generated/source/buildConfig/debug/com/example/test/BuildConfig.java
 app/build/intermediates/apk/debug/app-debug.apk
 app/build/intermediates/apk/debug/output-metadata.json
