@@ -12,16 +12,18 @@ import java.util.HashMap;
 public class ResultActivity extends AppCompatActivity {
 
     int money;
+
     HashMap<Integer, Integer> orderMap;
     HashMap<Integer, ItemDTO> map;
     TextView txt_money_result, txt_order_result;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         ItemDAO dao = new ItemDAO();
         map = dao.getItem();
+
+
 
         Intent intent = getIntent();
         money = intent.getIntExtra("money", 0);
@@ -32,13 +34,15 @@ public class ResultActivity extends AppCompatActivity {
 
         txt_money_result.setText("잔액 : " + money);
 
-        for (int i = 1; i < 5; i++) {
-            if (orderMap.get(i) != null) {
-                txt_order_result.append(map.get(i).getName() + " " + orderMap.get(i) + "개\n");
-            }
+        for (int i : orderMap.keySet()) {
+            String item = "";
+            if (i == 1) item = "콜라";
+            else if (i == 2) item = "펩시";
+            else if (i == 3) item = "스프라이트";
+            else if (i == 4) item = "웰치스";
+
+            txt_order_result.append(item + " " + orderMap.get(i) + "개 ");
         }
-
-
 
     }
 }
