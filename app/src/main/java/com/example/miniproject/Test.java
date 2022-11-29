@@ -6,6 +6,12 @@ public class Test {
     int a = 5;
     String TAG = "로그";
 
+        public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + 10);
+        }
+    }
+
     public void abc() {
         if (a != 5) {
             a = 4;
@@ -15,5 +21,4 @@ public class Test {
             }
         }
     }
-
 }
