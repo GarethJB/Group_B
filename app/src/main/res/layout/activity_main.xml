@@ -83,12 +83,14 @@
                 android:layout_height="120dp"/>
 
             <TextView
+                android:id="@+id/item2_price"
                 android:textAlignment="center"
                 android:text="콜라 800원"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:id="@+id/item2_text"
                 android:gravity="center"
                 android:text="10개 남음"
                 android:layout_width="match_parent"
@@ -127,12 +129,14 @@
                      android:layout_height="120dp"/>
 
                  <TextView
+                     android:id="@+id/item3_price"
                      android:textAlignment="center"
                      android:text="콜라 800원"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
                  <TextView
+                     android:id="@+id/item3_text"
                      android:gravity="center"
                      android:text="10개 남음"
                      android:layout_width="match_parent"
@@ -155,18 +159,21 @@
                  android:orientation="vertical">
 
                  <ImageView
+
                      android:src="@drawable/img4"
                      android:layout_gravity="center"
                      android:layout_width="100dp"
                      android:layout_height="120dp"/>
 
                  <TextView
+                     android:id="@+id/item4_price"
                      android:textAlignment="center"
                      android:text="콜라 800원"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"/>
 
                  <TextView
+                     android:id="@+id/item4_text"
                      android:gravity="center"
                      android:text="10개 남음"
                      android:layout_width="match_parent"
