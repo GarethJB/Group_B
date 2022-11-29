@@ -783,7 +783,7 @@ app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.j
 app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json
 app/build/intermediates/apk/debug/output-metadata.json
 app/build/intermediates/apk/debug/app-debug.apk
-app/build/generated/source/buildConfig/debug/com/example/test/BuildConfig.java
+app/build/*
 .idea/workspace.xml
 .gradle/file-system.probe
 .gradle/buildOutputCleanup/outputFiles.bin
@@ -794,3 +794,4 @@ app/build/generated/source/buildConfig/debug/com/example/test/BuildConfig.java
 .gradle/7.4/executionHistory/executionHistory.lock
 .gradle/7.4/executionHistory/executionHistory.bin
 .gradle/7.4/executionHistory/executionHistory.bin
+.idea/workspace.xml
