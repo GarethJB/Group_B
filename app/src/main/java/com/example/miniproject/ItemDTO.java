@@ -1,11 +1,18 @@
 package com.example.miniproject;
 
 public class ItemDTO {
+<<<<<<< HEAD
 
     private int id, price, qty;
     private String name;
 
     public ItemDTO(int id, String name, int price, int qty) {
+=======
+    private int id, price, qty;
+    private String name;
+
+    public ItemDTO(int id, int price, int qty, String name) {
+>>>>>>> Mini_JB
         this.id = id;
         this.price = price;
         this.qty = qty;
@@ -43,5 +50,8 @@ public class ItemDTO {
     public void setName(String name) {
         this.name = name;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Mini_JB
 }
