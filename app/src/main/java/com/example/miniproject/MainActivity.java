@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.util.HashMap;
 
+<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText txt_input;
@@ -30,12 +31,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int money = 0;
     int getMoney = 0;
 
+=======
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Button item1_btn, item2_btn, item3_btn, item4_btn;
+    int qty, money, price;
+
+    HashMap<>
+>>>>>>> Mini_JB
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         btn_input = findViewById(R.id.btn_input);
         txt_input = findViewById(R.id.txt_input);
         txt_money = findViewById(R.id.txt_money);
@@ -123,9 +133,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //btn_input.setOnClickListener(inputClick);
         btn_change.setOnClickListener(changeClick);
         btn_input.setOnClickListener(this);
+=======
+        ItemDAO dao = new ItemDAO();
+
+        item1_btn = findViewById(R.id.item1_btn);
+        item2_btn = findViewById(R.id.item2_btn);
+        item3_btn = findViewById(R.id.item3_btn);
+        item4_btn = findViewById(R.id.item4_btn);
+
+        item1_btn.setOnClickListener(this);
+        item2_btn.setOnClickListener(this);
+        item3_btn.setOnClickListener(this);
+        item4_btn.setOnClickListener(this);
+>>>>>>> Mini_JB
 
     }
 
+<<<<<<< HEAD
     public void refreshQty(int id) {
         switch(id) {
             case 1:
@@ -182,4 +206,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+=======
+
+    @Override
+    public void onClick(View v) {
+        ItemDAO dao = new ItemDAO();
+        dao.item_order(qty);
+        dao.charge(money, price);
+    }
+>>>>>>> Mini_JB
 }
